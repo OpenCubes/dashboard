@@ -7,7 +7,10 @@ Ember.MODEL_FACTORY_INJECTIONS = true
 App = Ember.Application.extend
   modulePrefix: 'dashboard' # TODO: loaded via config
   Resolver: Resolver
+  ready: ->
 
+    $('.ui.segment').addClass 'animated fadeInDown'
+    .addClass 'animated fadeInDown'
 
 App.Store = DS.Store.extend
   # override default adapter
@@ -17,4 +20,3 @@ App.Store = DS.Store.extend
 loadInitializers App, 'dashboard'
 
 `export default App`
-

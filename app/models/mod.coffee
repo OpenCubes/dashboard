@@ -6,7 +6,7 @@ Mod = DS.Model.extend
   summary: DS.attr 'string'
   category: DS.attr 'string'
 
-Mod.FIXTURES = [
+Mod.reopenClass FIXTURES: [
     {
       id: 1
       name: "First mod"
